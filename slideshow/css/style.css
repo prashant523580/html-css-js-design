@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    cursor: pointer;
+    width: auto;
+    top: 50%;
+    margin-top: -20px;
+    padding: 16px;
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+    user-select: none;
+    border-radius: 0 3px 3px 0;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 3px 0;
+    -webkit-border-radius: 3px 0 3px 0;
+    -moz-border-radius: 3px 0 3px 0;
+    -ms-border-radius: 3px 0 3px 0;
+    -o-border-radius: 3px 0 3px 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0, 0.8);
+}
+
+.caption {
+    position: absolute;
+    color: rgb(178, 184, 189);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    bottom: 8px;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.number {
+    position: absolute;
+    top: 0;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #064c6d;
+}
+
+.dot-content {
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: #7171719c;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: background-color 0.6 ease;
+    -webkit-transition: background-color 0.6 ease;
+    -moz-transition: background-color 0.6 ease;
+    -ms-transition: background-color 0.6 ease;
+    -o-transition: background-color 0.6 ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade;
+    -webkit-animation: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .prev,
+    .next,
+    .caption {
+        font-size: 11px;
+    }
+}
