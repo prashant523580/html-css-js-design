@@ -1,0 +1,21 @@
+#progress {
+    width: 100%;
+    background-color: #ccc;
+}
+
+#bar {
+    width: 0;
+    height: 30px;
+    background-color: rgb(26, 2, 26);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 12px 14px;
+    background-color: rgb(51, 3, 3);
+    color: rgb(245, 245, 245);
+}
