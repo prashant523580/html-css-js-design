@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(7, 76, 88);
+}
+
+#modal-btn {
+    display: flex;
+    justify-content: center;
+    outline: none;
+    margin: auto;
+    background-color: rgb(2, 44, 44);
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    border: 2px solid rgb(2, 44, 44);
+    box-shadow: 0px 4px 1px 0px rgb(70, 67, 64);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#modal-btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(2, 44, 44);
+}
+
+#modal-btn:active {
+    box-shadow: none;
+    transition: 0.1s ease-in-out;
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefeef;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: animatedmodal;
+    -webkit-animation: animatedmodal;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatedmodal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.close {
+    color: rgb(28, 184, 158);
+    float: right;
+    font-size: 28px !important;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(134, 26, 26);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 8px 12px;
+    background-color: rgb(8, 99, 99);
+    color: aliceblue;
+}
+
+.modal-body {
+    padding: 10px 14px;
+}
+
+.modal-footer {
+    padding: 12px 16px;
+    background-color: #111;
+    color: red;
+    text-align: center;
+}
