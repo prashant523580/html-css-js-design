@@ -1,0 +1,61 @@
+.tab {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #125a71;
+}
+
+.tab button {
+    color: aliceblue;
+    background-color: inherit;
+    float: left;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -ms-transition: .2s ease;
+    -o-transition: .2s ease;
+}
+
+.tab button:hover {
+    background-color: mediumslateblue;
+}
+
+
+/* create an active/current tablink class */
+
+.tab button.active {
+    background-color: brown;
+}
+
+.tabcontent {
+    display: none;
+    background-image: linear-gradient(rgb(17, 121, 121), rgb(22, 3, 90), rgb(31, 8, 27));
+    color: #10e43e;
+    padding: 14px 20px;
+    border: 2px solid rgb(54, 41, 41);
+    border-top: none;
+    /* line-height: 40px; */
+    transition: .3s ease-in-out;
+    animation: fade 2s;
+    -webkit-animation: fade 2s;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
