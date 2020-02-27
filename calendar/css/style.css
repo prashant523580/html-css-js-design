@@ -1,7 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    transition: .2s ease-in-out;
     box-sizing: border-box;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
 }
 
 body {
@@ -28,6 +33,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
     padding: 30px 20px;
     color: white;
@@ -143,4 +149,8 @@ body {
     -moz-transform: translatey(2px);
     -ms-transform: translatey(2px);
     -o-transform: translatey(2px);
+}
+
+.days ul li.previous-date {
+    color: rgb(141, 146, 143);
 }
