@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.image-container {
+    position: relative;
+    /* background-image: ; */
+    background-color: rgba(14, 12, 12, 0.507);
+    /* background-size: cover; */
+    height: 300px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    mix-blend-mode: multiply;
+    background-color: black;
+    color: white;
+    font-size: 10vw;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
