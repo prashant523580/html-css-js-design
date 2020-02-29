@@ -100,15 +100,15 @@ body {
 .days ul {
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .days ul li {
     width: 14%;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
     float: left;
+    justify-content: flex-end;
     text-align: center;
     padding: 14px 30px;
     color: aliceblue;
