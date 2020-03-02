@@ -154,3 +154,7 @@ body {
 .days ul li.previous-date {
     color: rgb(141, 146, 143);
 }
+
+#date {
+    font-size: 30px;
+}

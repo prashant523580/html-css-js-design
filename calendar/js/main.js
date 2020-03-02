@@ -10,7 +10,7 @@ function BodyLoad() {
         date.getFullYear(),
         date.getMonth(), 0
     ).getDate();
-    // date.setDate(1);
+    date.setDate(1);
     var day = date.getDay();
     // console.log(lastDateofMonth);
     // console.log(date.getMonth());
@@ -30,7 +30,7 @@ function BodyLoad() {
         "December"
     ];
     // console.log(months[date.getMonth()]); 
-    document.getElementById("date").innerHTML = date.toDateString();
+    document.getElementById("date").innerHTML = date.getFullYear();
     document.getElementById("month").innerHTML = months[date.getMonth()];
 
     var cells = "<ul>";
