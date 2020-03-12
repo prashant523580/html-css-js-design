@@ -12,9 +12,11 @@ function BodyLoad() {
     ).getDate();
     date.setDate(1);
     var day = date.getDay();
+    console.log(day);
     // console.log(lastDateofMonth);
     // console.log(date.getMonth());
     var today = new Date();
+    console.log(today);
     var months = [
         "January",
         "Feburary",
@@ -34,31 +36,29 @@ function BodyLoad() {
     document.getElementById("month").innerHTML = months[date.getMonth()];
 
     var cells = "<ul>";
-
     for (var x = day; x > 0; x--) {
         cells += "<li class='previous-date'>" + (previousDateofMonth - x + 1) + "</li>";
     }
-    for (var i = 1; i <= lastDateofMonth; i++) {
-        if (i === today.getDate() && date.getMonth() === today.getMonth()) {
 
+
+    for (var i = 1; i <= lastDateofMonth; i++) {
+        if (i === today.getDate() && date.getFullYear() == today.getFullYear() && today.getMonth() === date.getMonth()) {
             cells += "<li class='active'>" + i + "</li>";
         } else {
             cells += "<li>" + i + "</li>";
         }
-
     }
-
     document.getElementsByClassName("days")[0].innerHTML = cells;
 }
 
 function changeMonth(change) {
     console.log(change);
-    if (change === "prev") {
-        date.setMonth(date.getMonth() - 1);
-        // BodyLoad();
-    } else {
+    if (change === "next") {
         date.setMonth(date.getMonth() + 1);
-        // BodyLoad();
+
+    } else {
+        date.setMonth(date.getMonth() - 1);
+
     }
     BodyLoad();
 }
