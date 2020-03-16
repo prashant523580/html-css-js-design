@@ -10,10 +10,16 @@
 
 <body>
 
-    <nav class="navbar" id="nav">
-
-        <a href="#"> <img src="img/logo.jpg" style="border-radius: 50%; width:40px; height:40px;"></a>
-        <div class="nav-links">
+    <nav class="navbar" id="navbar">
+    <div class="header">
+        <a href="#"  class="logo"> <img src="img/logo.jpg"></a>
+        <div href="#" class="icon" onclick="fun(this)">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        </div>
+        <div class="nav-links" id="nav-links">
             <div class="dropdown">
                 <div class="drop-btn"> dropdown &#9660; </div>
                 <div class="dropdown-content">
@@ -46,12 +52,9 @@
             </div>
             <a href="#"> about </a>
         </div>
-        <div href="#" class="icon" onclick="fun(this)">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+        
     </nav>
+    <section style="height:1200px;"> </section>
     <script src="js/main.js">
       
     </script>
